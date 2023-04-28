@@ -37,12 +37,16 @@ for num in odd_integers:
 # Open the first output file 'double.txt' in write mode
 with open ("double.txt", "w") as num_file:
 
-# Loop through the squares list:
-    # Write each square to the file followed by a new line character
+# Loop through the squares list and write to num_file
+    for square in square_even_integers:
+        num_file.write(str(square) + "\n" )
 # Close the first output file
+
 # Open the second output file 'triple.txt' in write mode
 with open ("triple.txt", "w") as num_file:
-     
-# Loop through the cubes list:
-    # Write each cube to the file followed by a new line character
+
+# Loop through the cubes list and write to num_file
+    for cube in cube_odd_integers:
+        num_file.write(str(square)+ "\n")
+        
 # Close the second output file
