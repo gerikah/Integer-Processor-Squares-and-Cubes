@@ -19,6 +19,9 @@ for num in integers:
         odd_integers.append(num)
 
 # Create two empty lists, squares and cubes
+squared_even_integers = []
+cubed_odd_integers = []
+
 # Loop through the even_integers list:
     # Calculate the square of each integer and append it to squares list
 # Loop through the odd_integers list:
