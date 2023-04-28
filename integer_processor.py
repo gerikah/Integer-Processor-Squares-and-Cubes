@@ -27,9 +27,13 @@ for num in even_integers:
     # Calculate the square of each integer and append it to squares list
     square = num ** 2
     square_even_integers.append(square)
-    
+
 # Loop through the odd_integers list:
+for num in odd_integers:
     # Calculate the cube of each integer and append it to cubes list
+    cube = num ** 3
+    cube_odd_integers.append(cube)
+    
 # Open the first output file 'double.txt' in write mode
 # Loop through the squares list:
     # Write each square to the file followed by a new line character
