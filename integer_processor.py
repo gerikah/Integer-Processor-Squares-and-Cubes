@@ -5,6 +5,9 @@ with open ("integers.txt", "r") as num_file:
     integers = num_file.read().splitlines
     
 # Create two empty lists, even_integers and odd_integers
+    even_integers = []
+    odd_integers = []
+    
 # Loop through the list of integers:
     # If the integer is even, append it to even_integers list
     # If the integer is odd, append it to odd_integers list
