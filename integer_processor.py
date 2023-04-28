@@ -1,3 +1,6 @@
+# Object Oriented Programming CMPE-103 PROGRAMMING EXERCISES : Problem 4
+# ALDAY, Gerikah L. - BSCPE 1-5
+
 # open the input file 'integers.txt' in read mode
 with open('integers.txt', 'r') as num_file:
     # read the integers from the file and store them in a list
@@ -35,18 +38,24 @@ for num in odd_integers:
 
 # open the first output file 'double.txt' in write mode
 with open('double.txt', 'w') as num_file:
+    # write the header row
+    num_file.write("| {:<10} | {:<10} |\n".format("Number", "Square"))
+    num_file.write("-" * 27 + "\n")
     # loop through the squares list and write each square to the file followed by a new line character
-    for square in squares_even_integers:
-        num_file.write(str(square) + '\n')
+    for i in range(len(even_integers)):
+        num_file.write("| {:<10} | {:<10} |\n".format(even_integers[i], squares_even_integers[i]))
 
 # close the first output file
 num_file.close()
 
 # open the second output file 'triple.txt' in write mode
 with open('triple.txt', 'w') as num_file:
+    # write the header row
+    num_file.write("| {:<10} | {:<10} |\n".format("Number", "Cube"))
+    num_file.write("-" * 27 + "\n")
     # loop through the cubes list and write each cube to the file followed by a new line character
-    for cube in cubes_odd_integers:
-        num_file.write(str(cube) + '\n')
+    for i in range(len(odd_integers)):
+        num_file.write("| {:<10} | {:<10} |\n".format(odd_integers[i], cubes_odd_integers[i]))
 
 # close the second output file
 num_file.close()
