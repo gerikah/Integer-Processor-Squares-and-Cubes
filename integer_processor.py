@@ -33,12 +33,16 @@ for num in odd_integers:
     # Calculate the cube of each integer and append it to cubes list
     cube = num ** 3
     cube_odd_integers.append(cube)
-    
+
 # Open the first output file 'double.txt' in write mode
+with open ("double.txt", "w") as num_file:
+
 # Loop through the squares list:
     # Write each square to the file followed by a new line character
 # Close the first output file
 # Open the second output file 'triple.txt' in write mode
+with open ("triple.txt", "w") as num_file:
+     
 # Loop through the cubes list:
     # Write each cube to the file followed by a new line character
 # Close the second output file
