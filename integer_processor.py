@@ -19,11 +19,15 @@ for num in integers:
         odd_integers.append(num)
 
 # Create two empty lists, squares and cubes
-squared_even_integers = []
-cubed_odd_integers = []
+square_even_integers = []
+cube_odd_integers = []
 
 # Loop through the even_integers list:
+for num in even_integers:
     # Calculate the square of each integer and append it to squares list
+    square = num ** 2
+    square_even_integers.append(square)
+    
 # Loop through the odd_integers list:
     # Calculate the cube of each integer and append it to cubes list
 # Open the first output file 'double.txt' in write mode
