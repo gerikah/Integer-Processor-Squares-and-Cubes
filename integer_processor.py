@@ -5,12 +5,19 @@ with open ("integers.txt", "r") as num_file:
     integers = num_file.read().splitlines
     
 # Create two empty lists, even_integers and odd_integers
-    even_integers = []
-    odd_integers = []
-    
+even_integers = []
+odd_integers = []
+
 # Loop through the list of integers:
+for num in integers:
+    
     # If the integer is even, append it to even_integers list
+    if num % 2 == 0:
+        even_integers.append(num)
     # If the integer is odd, append it to odd_integers list
+    else:
+        odd_integers.append(num)
+
 # Create two empty lists, squares and cubes
 # Loop through the even_integers list:
     # Calculate the square of each integer and append it to squares list
