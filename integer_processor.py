@@ -1,5 +1,9 @@
 # Open the input file 'integers.txt' in read mode
+with open ("integers.txt", "r") as num_file:
+
 # Read the integers from the file and store them in a list
+    integers = num_file.read().splitlines
+    
 # Create two empty lists, even_integers and odd_integers
 # Loop through the list of integers:
     # If the integer is even, append it to even_integers list
